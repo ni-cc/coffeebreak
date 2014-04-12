@@ -32,11 +32,17 @@ Rectangle {
         return "you lost";
 
         }
-        else return rage
+        else return rage;
+    }
+
+    function end(){
+        if(game.count > 4) {won.visible = true;}
+        else{ game.count += 1;}
+
     }
 
     property int rage : 0
-
+    property int count: 0
 
 
 
@@ -104,6 +110,7 @@ Rectangle {
                     game.rage += coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).rage
                     dialogue.question = coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).nextQ
                     event.accepted = true;
+                    end()
                 }
             }
     }
@@ -167,5 +174,12 @@ Rectangle {
         }
     }
 
+    Image {
+        id: won
+        anchors.top: parent.top
+        anchors.fill: parent
+        source: "qrc:////img/titel.png"
+        visible: false
 
+    }
 }

@@ -212,7 +212,7 @@ ListModel {
     }
     //7
     ListElement {
-        question:"Now I have done the hard part I think you can take it from here and do the rest, ok boddy?"
+        question:"Now I have done the hard part I think you can take it from here and do the rest, ok buddy?"
         answers:
             [ListElement {
                          answer:"Aarg! *SMASH*"
@@ -270,7 +270,7 @@ ListModel {
     }
     //9
     ListElement {
-        question:"Now I have done the hard part I think you can take it from here and do the rest, ok boddy?"
+        question:"Now I have done the hard part I think you can take it from here and do the rest, ok buddy?"
         answers:
             [ListElement {
                          answer:"Aarg! *SMASH*"
