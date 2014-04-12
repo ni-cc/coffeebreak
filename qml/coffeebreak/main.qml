@@ -68,12 +68,13 @@ Rectangle {
         anchors.centerIn: parent
     }
 */
-   property var qLabels: ["qrc:////img/jeff-fishy.png",
+   property var qLabels: ["qrc:////img/jeff-mean.png",
        "qrc:////img/jeff-fishy.png",
-       "qrc:////img/jeff-fishy.png",
-       "qrc:////img/jeff-fishy.png",
-       "qrc:////img/jeff-fishy.png",
-       "qrc:////img/jeff-fishy.png"]
+       "qrc:////img/jeff-neutral.png",
+       "qrc:////img/jeff-weird.png",
+       "qrc:////img/jeff-weird2.png",
+       "qrc:////img/jeff-weird3.png",
+        "qrc:////img/jeff-weird4.png"]
     Image {
         id: background
         anchors.top: parent.top
