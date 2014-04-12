@@ -27,15 +27,27 @@ Rectangle {
                     turnOnVisibilites(item.children[i])
             }
     }
+    function rageOver99(){
+        if(rage > 99){
+        return "you lost";
+
+        }
+        else return rage
+    }
 
     property int rage : 0
+
+
+
+
+
    //onRageChanged: randomizeVisibilites(parent)
-    SequentialAnimation on rage {
+    /*SequentialAnimation on rage {
         NumberAnimation { from: 0; to: 1; duration: 2500; easing.type: Easing.Linear }
          NumberAnimation { from: 0.9; to: 1; duration: 2500; easing.type: Easing.Linear }
         loops: Animation.Infinite
         running: true
-    }
+    }*/
 
 /*
     Text {
@@ -108,6 +120,15 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             wrapMode: Text.WordWrap
             property int hidden: 100
+        }
+        Text{
+            width: parent.width
+
+            text: rageOver99()
+            anchors.horizontalCenter: parent.horizontalCenter
+            wrapMode: Text.WordWrap
+
+
         }
 
 
