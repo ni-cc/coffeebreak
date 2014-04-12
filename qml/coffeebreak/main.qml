@@ -47,7 +47,7 @@ Rectangle {
 
 
 
-   onRageChanged: randomizeVisibilites(parent)
+  // onRageChanged: randomizeVisibilites(parent)
     /*SequentialAnimation on rage {
         NumberAnimation { from: 0; to: 1; duration: 2500; easing.type: Easing.Linear }
          NumberAnimation { from: 0.9; to: 1; duration: 2500; easing.type: Easing.Linear }
@@ -75,6 +75,7 @@ Rectangle {
        "qrc:////img/jeff-fishy.png",
        "qrc:////img/jeff-fishy.png"]
     Image {
+        id: background
         anchors.top: parent.top
         anchors.fill: parent
         source: qLabels[0]
@@ -110,6 +111,7 @@ Rectangle {
                     game.rage += coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).rage
                     dialogue.question = coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).nextQ
                     event.accepted = true;
+                    background.source  = qLabels[game.count]
                     end()
                 }
             }
@@ -178,7 +180,7 @@ Rectangle {
         id: won
         anchors.top: parent.top
         anchors.fill: parent
-        source: "qrc:////img/titel.png"
+        source: "qrc:////img/end.png"
         visible: false
 
     }

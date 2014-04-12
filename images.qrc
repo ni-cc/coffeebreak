@@ -3,5 +3,12 @@
         <file>img/jeff-fishy.png</file>
         <file>img/cursor2.png</file>
         <file>img/titel.png</file>
+        <file>img/jeff-mean.png</file>
+        <file>img/jeff-neutral.png</file>
+        <file>img/jeff-weird.png</file>
+        <file>img/jeff-weird2.png</file>
+        <file>img/jeff-weird3.png</file>
+        <file>img/jeff-weird4.png</file>
+        <file>img/end.png</file>
     </qresource>
 </RCC>
