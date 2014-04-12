@@ -142,7 +142,7 @@ ListModel {
             ListElement {
                         answer:"How about >>Jeff the useless CoWorker<<!"
                         rage: 30
-                        nextQ: 6
+                        nextQ: 9
 
             },
             ListElement {
