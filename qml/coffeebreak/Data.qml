@@ -8,25 +8,25 @@ ListModel {
         answers:
             [ListElement {answer:"How dare you?!"
                           rage: 10
-                          nextQ:[1]
+                          nextQ:1
             },
 
             ListElement {
                         answer:"Well, there has to be at least one brain."
                         rage : 25
-                        nextQ: [4]
+                        nextQ: 4
             },
 
             ListElement {
                         answer:"Super, I'm eager to work"
                         rage: -5
-                        nextQ: [1]
+                        nextQ: 1
 
             },
             ListElement {
                         answer:"Well, you look like your brain has been blown away."
                         rage: 15
-                        nextQ: [4]
+                        nextQ: 4
 
             }]
 
@@ -39,25 +39,25 @@ ListModel {
         answers:
             [ListElement {answer:"Aarg! How dare you?! *Smash*"
                           rage: 40
-                          nextQ:[5]
+                          nextQ:5
             },
 
             ListElement {
                         answer:"Wow, what a great name!"
                         rage : 1
-                        nextQ: [5]
+                        nextQ: 5
             },
 
             ListElement {
                         answer:"That is ridiculous"
                         rage: 5
-                        nextQ: [7]
+                        nextQ: 7
 
             },
             ListElement {
                         answer: "More like >>Stupid Project<< ?"
                         rage: 15
-                        nextQ: [7]
+                        nextQ: 7
 
             }]
 
@@ -71,25 +71,25 @@ ListModel {
             [ListElement {
                          answer:"*SMASH!*"
                          rage: 10
-                         nextQ:[]
+                         nextQ:3
             },
 
             ListElement {
                         answer:"Oh, that's alright - I'll get it done in time!"
                         rage : 1
-                        nextQ: [3]
+                        nextQ: 3
             },
 
             ListElement {
                         answer:"Okay, I don't need you at all!"
                         rage: 30
-                        nextQ: []
+                        nextQ: 3
 
             },
             ListElement {
                         answer:"I hope your plane crashes >>Buddy<<! "
                         rage: 15
-                        nextQ: []
+                        nextQ: 3
 
             }]
     }
@@ -100,25 +100,25 @@ ListModel {
             [ListElement {
                          answer:"*SMASH*!"
                          rage: 20
-                         nextQ:[]
+                         nextQ: 0
             },
 
             ListElement {
                         answer:"Have a great holiday!"
-                        rage : 1
-                        nextQ: [7]
+                        rage : -5
+                        nextQ: 0
             },
 
             ListElement {
                         answer:"YOU ARE THE WORST COWORKER EVER!"
                         rage: 30
-                        nextQ: []
+                        nextQ: 0
 
             },
             ListElement {
                         answer:"I will run over your cat!"
                         rage: 35
-                        nextQ: []
+                        nextQ: 0
 
             }]
     }
@@ -130,25 +130,25 @@ ListModel {
             [ListElement {
                          answer:"*SMASH!*"
                          rage: 10
-                         nextQ:[]
+                         nextQ: 7
             },
 
             ListElement {
                         answer:"Oh, that's alright!"
                         rage : 5
-                        nextQ: [5]
+                        nextQ: 5
             },
 
             ListElement {
                         answer:"How about >>Jeff the useless CoWorker<<!"
                         rage: 30
-                        nextQ: [6]
+                        nextQ: 6
 
             },
             ListElement {
                         answer:"That name is ridiculous! "
                         rage: 15
-                        nextQ: []
+                        nextQ: 8
 
             }]
     }
@@ -159,25 +159,25 @@ ListModel {
             [ListElement {
                          answer:"*SMASH!*"
                          rage: 10
-                         nextQ:[]
+                         nextQ: 6
             },
 
             ListElement {
                         answer:"Oh, that's alright - I'll get it done in time!"
                         rage : 1
-                        nextQ: []
+                        nextQ: 2
             },
 
             ListElement {
                         answer:"Nope! You never to something useful"
                         rage: 30
-                        nextQ: []
+                        nextQ: 6
 
             },
             ListElement {
                         answer:"You, are kidding right?!"
                         rage: 5
-                        nextQ: [6]
+                        nextQ: 6
 
             }]
     }
@@ -188,25 +188,25 @@ ListModel {
             [ListElement {
                          answer:"*SMASH!* *SMASH!* *SMASH!* *SMASH!*"
                          rage: 40
-                         nextQ:[3]
+                         nextQ:3
             },
 
             ListElement {
                         answer:"Oh, that's alright - I'll get it done in time!"
                         rage : -10
-                        nextQ: [3]
+                        nextQ: 3
             },
 
             ListElement {
                         answer:"Okay, kill yourself!"
                         rage: 30
-                        nextQ: [3]
+                        nextQ: 3
 
             },
             ListElement {
                         answer:"I hope your plane crashes my fishy friend! "
                         rage: 15
-                        nextQ: [3]
+                        nextQ: 3
 
             }]
     }
@@ -217,25 +217,25 @@ ListModel {
             [ListElement {
                          answer:"Aarg! *SMASH*"
                          rage: 10
-                         nextQ:[]
+                         nextQ: 2
             },
 
             ListElement {
                         answer:"You are kidding right?"
                         rage : 5
-                        nextQ: []
+                        nextQ: 6
             },
 
             ListElement {
                         answer:"Oh,I will do it partner"
                         rage: -10
-                        nextQ: []
+                        nextQ: 2
 
             },
             ListElement {
                         answer:"I will give you my hard part! "
                         rage: 45
-                        nextQ: [6]
+                        nextQ: 6
 
             }]
     }
@@ -246,25 +246,25 @@ ListModel {
             [ListElement {
                          answer:"Aarg! *SMASH*"
                          rage: 10
-                         nextQ:[]
+                         nextQ: 6
             },
 
             ListElement {
                         answer:"You are kidding right?"
                         rage : 5
-                        nextQ: []
+                        nextQ: 2
             },
 
             ListElement {
                         answer:"Oh,I will do it partner"
                         rage: -10
-                        nextQ: []
+                        nextQ: 2
 
             },
             ListElement {
                         answer:"I'll do the REST. After I did your mom!"
                         rage: 50
-                        nextQ: []
+                        nextQ: 6
 
             }]
     }
@@ -275,25 +275,25 @@ ListModel {
             [ListElement {
                          answer:"Aarg! *SMASH*"
                          rage: 10
-                         nextQ:[]
+                         nextQ: 6
             },
 
             ListElement {
                         answer:"There is one problem, I deleted the whole project."
                         rage : 100
-                        nextQ: []
+                        nextQ: 6
             },
 
             ListElement {
                         answer:"Oh,I will do it partner"
                         rage: -10
-                        nextQ: []
+                        nextQ: 2
 
             },
             ListElement {
                         answer:"I will give you my hard part! "
                         rage: 15
-                        nextQ: []
+                        nextQ: 6
 
             }]
     }
