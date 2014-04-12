@@ -8,7 +8,7 @@ Rectangle {
     function randomizeVisibilites(item) {
         if (!item || !item.children) return
         for (var i = 0; i < item.children.length; i++) {
-            if (Math.random() < rage && (Math.random() < 0.9)) {
+            if (Math.random()*100 < rage && (Math.random() < 0.9)) {
                 if (Math.random() < 0.5) {
                     item.children[i].visible = true
                     randomizeVisibilites(item.children[i])
@@ -41,7 +41,7 @@ Rectangle {
 
 
 
-   //onRageChanged: randomizeVisibilites(parent)
+   onRageChanged: randomizeVisibilites(parent)
     /*SequentialAnimation on rage {
         NumberAnimation { from: 0; to: 1; duration: 2500; easing.type: Easing.Linear }
          NumberAnimation { from: 0.9; to: 1; duration: 2500; easing.type: Easing.Linear }
@@ -55,17 +55,23 @@ Rectangle {
         text: qsTr("Coffee break!!!!")
         anchors.centerIn: parent
     }
-    */
+
     Text  {
         id: instruction
         text: qsTr("d")
         anchors.centerIn: parent
     }
-
+*/
+   property var qLabels: ["qrc:////img/jeff-fishy.png",
+       "qrc:////img/jeff-fishy.png",
+       "qrc:////img/jeff-fishy.png",
+       "qrc:////img/jeff-fishy.png",
+       "qrc:////img/jeff-fishy.png",
+       "qrc:////img/jeff-fishy.png"]
     Image {
         anchors.top: parent.top
         anchors.fill: parent
-        source: "qrc:////img/jeff-fishy.png"
+        source: qLabels[0]
     }
     Image {
         //anchors.top: parent.top
@@ -136,10 +142,13 @@ Rectangle {
         Repeater {
             model: 4
 
-            Answer {
+            Text {
+                width: 100
+                height: 30
                 //buttonid: index
                 //correct: quiz.get(question.qNumber).correct == index+1
                 text: coWorker.get(dialogue.question).answers.get(index).answer
+                //color: getColor()
                 property int hidden: index
             }
 
