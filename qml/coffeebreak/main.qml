@@ -37,12 +37,13 @@ Rectangle {
         running: true
     }
 
-
+/*
     Text {
         id: splash
         text: qsTr("Coffee break!!!!")
         anchors.centerIn: parent
     }
+    */
     Text  {
         id: instruction
         text: qsTr("d")
@@ -55,9 +56,38 @@ Rectangle {
         source: "qrc:////img/jeff-fishy.png"
     }
     Image {
-        anchors.top: parent.top
-        anchors.fill: parent
+        //anchors.top: parent.top
+      // anchors.fill: parent
+        id: trunk
+        x: 0
+        y: 0
+        width: parent.width
+        height: 400
         source: "qrc:////img/cursor2.png"
+        focus: true
+        Keys.onPressed: {
+                if (event.key == Qt.Key_Right) {
+                    x += 10
+                    event.accepted = true;
+                }
+                if (event.key == Qt.Key_Left) {
+                    x -= 10
+                    event.accepted = true;
+                }
+                if (event.key == Qt.Key_Up) {
+                    y -= 10
+                    event.accepted = true;
+                }
+                if (event.key == Qt.Key_Down) {
+                    y += 10
+                    event.accepted = true;
+                }
+                if (event.key == Qt.Key_Return && dialogue.childAt(x, y).hidden != 100) {
+                    game.rage += coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).rage
+                    dialogue.question = coWorker.get(dialogue.question).answers.get(dialogue.childAt(x, y).hidden).nextQ
+                    event.accepted = true;
+                }
+            }
     }
     Data {
         id: coWorker
@@ -77,6 +107,7 @@ Rectangle {
             text: coWorker.get(dialogue.question).question
             anchors.horizontalCenter: parent.horizontalCenter
             wrapMode: Text.WordWrap
+            property int hidden: 100
         }
 
 
@@ -88,17 +119,23 @@ Rectangle {
                 //buttonid: index
                 //correct: quiz.get(question.qNumber).correct == index+1
                 text: coWorker.get(dialogue.question).answers.get(index).answer
+                property int hidden: index
             }
 
         }
     }
-/*
-    MouseArea {
+    Image {
+        id: splash
+        anchors.top: parent.top
         anchors.fill: parent
-        onClicked: {
-            splash.visible = false//Qt.quit();\n
+        source: "qrc:////img/titel.png"
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                splash.visible = false//Qt.quit();\n
+            }
         }
     }
-    */
+
 
 }
