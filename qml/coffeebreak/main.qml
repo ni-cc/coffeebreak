@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
+    id: game
     width: 480
     height: 320
 
@@ -53,9 +54,13 @@ Rectangle {
         anchors.fill: parent
         source: "qrc:////img/jeff-fishy.png"
     }
-
+    Image {
+        anchors.top: parent.top
+        anchors.fill: parent
+        source: "qrc:////img/cursor2.png"
+    }
     Data {
-        id: coworker
+        id: coWorker
     }
 
     Column {
@@ -68,8 +73,10 @@ Rectangle {
         property int question: 0
 
         Text {
-            text: coworker.get(dialogue.question).question
+            width: parent.width
+            text: coWorker.get(dialogue.question).question
             anchors.horizontalCenter: parent.horizontalCenter
+            wrapMode: Text.WordWrap
         }
 
 
@@ -80,16 +87,18 @@ Rectangle {
             Answer {
                 //buttonid: index
                 //correct: quiz.get(question.qNumber).correct == index+1
-                text: coworker.get(dialogue.question).answers.get(index).answer
+                text: coWorker.get(dialogue.question).answers.get(index).answer
             }
 
         }
     }
-
+/*
     MouseArea {
         anchors.fill: parent
         onClicked: {
             splash.visible = false//Qt.quit();\n
         }
     }
+    */
+
 }

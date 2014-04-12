@@ -7,8 +7,8 @@ Text {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            rage += coworker.get(dialogue.question).answers.get(index).rage
-            dialogue.question = coworker.get(dialogue.question).answers.get(index).nextQ.get(0)
+            game.rage += coWorker.get(dialogue.question).answers.get(index).rage
+            dialogue.question = coWorker.get(dialogue.question).answers.get(index).nextQ
             //question.wasCorrect = correct;
         }
     }
